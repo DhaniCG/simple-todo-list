@@ -14,7 +14,175 @@ body {
 }
 
 header, main, footer {
+    position: relative;
     width: 100%;
+    z-index: 5;
+}
+
+.decorations {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.decorations > div {
+    position: absolute;
+}
+
+.decorations .left-top {
+    top: -70px;
+    left: -77px;
+}
+
+.decorations .right-top {
+    top: -32px;
+    right: -90px;
+}
+
+.decorations .left-bottom {
+    bottom: 41px;
+    left: -119px;
+}
+
+.decorations .right-bottom {
+    bottom: 10px;
+    right: -108px;
+}
+
+.decorations .left-top .dec-1,
+.decorations .left-top .dec-2,
+.decorations .right-top .dec-1,
+.decorations .right-top .dec-2 {
+    position: absolute;
+    top: 0;
+    width: 187px;
+    height: 156px;
+    box-shadow: 4px 4px 3px #0000001a;
+}
+
+.decorations .left-top .dec-1,
+.decorations .left-top .dec-2 {
+    left: 0;
+}
+
+.decorations .right-top .dec-1,
+.decorations .right-top .dec-2 {
+    right: 0;
+}
+
+.decorations .left-top .dec-1 {
+    transform: rotateZ(27.73deg);
+}
+
+.decorations .left-top .dec-2 {
+    transform: rotateZ(47.96deg);
+}
+
+.decorations .right-top .dec-1 {
+    transform: rotateZ(119.67deg);
+}
+
+.decorations .right-top .dec-2 {
+    transform: rotateZ(99.44deg);
+}
+
+.decorations .left-bottom .dec-1,
+.decorations .left-bottom .dec-2,
+.decorations .right-bottom .dec-1,
+.decorations .right-bottom .dec-2 {
+    position: absolute;
+    bottom: 0;
+    filter: drop-shadow(4px 4px 3px #0000001a);
+}
+
+.decorations .left-bottom .dec-1 {
+    left: 0;
+}
+
+.decorations .left-bottom .dec-2 {
+    bottom: -122px;
+    left: -22px;
+}
+
+.decorations .right-bottom .dec-1 {
+    right: 0;
+}
+
+.decorations .right-bottom .dec-2 {
+    bottom: -86px;
+    right: -10px;
+}
+
+/* Main Todo List Page Colors */
+
+.decorations.basic-bg-color .left-top .dec-1 {
+    background-color: #4E9EE9;
+}
+
+.decorations.basic-bg-color .left-top .dec-2 {
+    background-color: #4EDFE9;
+}
+
+.decorations.basic-bg-color .right-top .dec-1 {
+    background-color: #4E79E9;
+}
+
+.decorations.basic-bg-color .right-top .dec-2 {
+    background-color: #C994F3;
+}
+
+.decorations.basic-bg-color .left-bottom .dec-1 path {
+    fill: #EDA983;
+}
+
+.decorations.basic-bg-color .left-bottom .dec-2 path {
+    fill: #817FDE;
+}
+
+.decorations.basic-bg-color .right-bottom .dec-1 path {
+    fill: #DE7FD5;
+}
+
+.decorations.basic-bg-color .right-bottom .dec-2 path {
+    fill: #83C7ED;
+}
+
+/* Working Todo List Page Colors */
+
+.decorations.work-bg-color .left-top .dec-1 {
+    background-color: #C379F1;
+}
+
+.decorations.work-bg-color .left-top .dec-2 {
+    background-color: #4EE982;
+}
+
+.decorations.work-bg-color .right-top .dec-1 {
+    background-color: #4E70E9;
+}
+
+.decorations.work-bg-color .right-top .dec-2 {
+    background-color: #F19C82;
+}
+
+.decorations.work-bg-color .left-bottom .dec-1 path {
+    fill: #83C7ED;
+}
+
+.decorations.work-bg-color .left-bottom .dec-2 path {
+    fill: #D66C9E;
+}
+
+.decorations.work-bg-color .right-bottom .dec-1 path {
+    fill: #D87272;
+}
+
+.decorations.work-bg-color .right-bottom .dec-2 path {
+    fill: #7FC1DE;
 }
 
 main {
